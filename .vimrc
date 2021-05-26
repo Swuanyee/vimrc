@@ -3,6 +3,7 @@ set number
 filetype on
 colorscheme murphy
 set autoindent
+set clipboard=unnamedplus
 runtime macros/matchit.vim
 filetype plugin on
 
@@ -12,8 +13,12 @@ call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'valloric/python-indent'
+Plug 'scrooloose/syntastic'
+Plug 'andviro/flake8-vim'
 call plug#end()
 
+let python_highlight_all=1
 syntax on
 let g:zenburn_high_Contrast = 1
 color zenburn
