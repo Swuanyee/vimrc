@@ -86,6 +86,8 @@ function! FindPythonVenv()
   return 'python3'
 endfunction
 
+inoremap <silent><expr> <C-y> pumvisible() ? "\<C-y>" : "\<C-y>"
+
 " Autocommand to dynamically set the Python path for 'coc.nvim' when a Python file is opened
 autocmd BufEnter *.py let g:coc_user_config = {
 \ 'python.pythonPath': FindPythonVenv(),
