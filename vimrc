@@ -1,1 +1,0 @@
-/Users/kyawswuanyee/.vimrc
