@@ -37,6 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}    " Intellisense engine for Vim
 Plug 'ghifarit53/tokyonight-vim' " Tokyo night theme
 Plug 'sainnhe/everforest'       " Everforest theme
 Plug 'mfussenegger/nvim-jdtls'  " Java Development Tools Language Server
+Plug 'vim-airline/vim-airline'  " Status line
 call plug#end()
 
 "Nerdtree Configuration 
@@ -129,3 +130,10 @@ nmap <silent> <leader>o :lua require('jdtls').organize_imports()<CR>
 nmap <silent> <leader>v :lua require('jdtls').extract_variable()<CR>
 nmap <silent> <leader>c :lua require('jdtls').extract_constant()<CR>
 vmap <silent> <leader>m :lua require('jdtls').extract_method(true)<CR>
+
+
+
+" Vim-airline settings
+" show buffers filename along with the buffer number
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#enabled = 1
