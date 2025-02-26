@@ -33,6 +33,7 @@ Plug 'github/copilot.vim'		" GitHub Copilot
 Plug 'preservim/tagbar'		    " Tagbar
 Plug 'dense-analysis/ale'       " Asynchronous linting/fixing
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder with installation command
+Plug 'junegunn/fzf.vim'         " Fzf.vim integration
 Plug 'neoclide/coc.nvim', {'branch': 'release'}    " Intellisense engine for Vim
 Plug 'ghifarit53/tokyonight-vim' " Tokyo night theme
 Plug 'sainnhe/everforest'       " Everforest theme
